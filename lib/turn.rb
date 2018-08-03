@@ -58,8 +58,6 @@ def turn(array)
 #    display_board(array)
     if (check_win(array, choice))
       puts "Player #{token} wins!"
-      n = 10
     end
   end
-  n + 1
 end
