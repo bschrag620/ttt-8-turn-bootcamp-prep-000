@@ -53,11 +53,7 @@ def turn(array)
   if (!choice) || (!valid_move?(array, choice))
     turn(array)
   else
-    if (n % 2 == 0)
-      token = "X"
-    else
-      token = "O"
-    end
+    token = "X"
     move(array, choice, token)
 #    display_board(array)
     if (check_win(array, choice))
