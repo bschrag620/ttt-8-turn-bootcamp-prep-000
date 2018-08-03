@@ -55,7 +55,7 @@ def turn(array)
   else
     token = "X"
     move(array, choice, token)
-#    display_board(array)
+    display_board(array)
     if (check_win(array, choice))
       puts "Player #{token} wins!"
     end
