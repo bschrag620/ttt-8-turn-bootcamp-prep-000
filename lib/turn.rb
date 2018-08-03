@@ -51,8 +51,7 @@ def turn(array)
   puts "Please enter 1-9:"
   choice = input_to_index(gets.strip)
   if (!choice) || (!valid_move?(array, choice))
-    puts "Invalid choice."
-    turn(n, array)
+    turn(array)
   else
     if (n % 2 == 0)
       token = "X"
